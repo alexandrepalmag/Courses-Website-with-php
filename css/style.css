@@ -13,22 +13,31 @@ body {
     box-sizing: border-box;
 }
 
-body>.container {
+/* body>.container {
     padding-top: 60px;
 }
-
+ */
 
 /* ==========================nav=========================== */
 header {
-    padding: 3rem;
+    padding: 3.15rem;
 }
 nav#navGeneral {
-    padding: 1.5rem;
-    background-color: rgba(20, 25, 31, 0.95)!important;
+    padding: 1.02rem;
+    background-color: rgba(94, 20, 125, 0.88)!important;
+   /*  rgba(20, 25, 31, 0.95)!important; */
     /* #2A4C54!important rgb(89, 154, 173)*/
 }
 #content {
     height: 500px;
-    background: red;
-    padding: 1rem;
+    border: solid;
+    padding: 3rem;
+}
+
+
+/* ==========================footer=========================== */
+.person-footer {
+    background: rgb(78, 4, 109);
+    display: flex;
+    justify-content: center;
 }

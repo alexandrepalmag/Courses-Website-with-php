@@ -1,6 +1,6 @@
 </div>
 </body>
-<footer class="footer mt-auto py-3" style="background-color: green;padding:10px">
+<footer class="footer mt-auto py-3 person-footer">
     <div class="container">
         <span class="text-muted">School of Courses 2020 &copy;</span>
     </div>
