@@ -6,21 +6,15 @@ include 'header.php';
 
 //page content
 $page = $_GET['page'];
-if($page == 'courses') {
+if ($page == 'courses') {
     include 'views/courses.php';
-}
-elseif($page == 'students'){
+} elseif ($page == 'students') {
     include 'views/students.php';
-}
-elseif($page == 'enrollments.php'){
+} elseif ($page == 'enrollments') {
     include 'views/enrollments.php';
-}else{
+} else {
     include 'views/home.php';
 }
-
-include 'views/home.php';
-
-
 
 //page footer
 include 'footer.php';

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School of Courses</title>
+    <link rel="stylesheet" href="lib/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 </head>
