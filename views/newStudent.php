@@ -1,17 +1,17 @@
 <div class="card">
     <div class="card-header">
-        <h1>Register New Course</h1>
+        <h1>Register New Student</h1>
     </div>
     <div class="card-body">
-        <form method="POST" action="register_course.php">
+        <form method="POST" action="register_student.php">
             <div class="form-row" style="padding: 1rem;">
                 <div class="col">
-                    <label>Course Name</label>
-                    <input type="text" class="form-control" name="name_course" placeholder="Course Name" autofocus required>
+                    <label>Student Name</label>
+                    <input type="text" class="form-control" name="name_student" placeholder="Student Name" autofocus required>
                 </div>
                 <div class="col">
-                    <label>Amount Hours</label>s
-                    <input type="text" class="form-control" name="amount_hours" placeholder="Amount Hours" required>
+                    <label>Date of Birth</label>
+                    <input type="date" class="form-control" name="date_birth" placeholder="Date of Birth" required>
                 </div>
             </div>
             <div class="container">

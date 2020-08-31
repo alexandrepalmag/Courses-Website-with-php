@@ -1,4 +1,10 @@
-<table class="table">
+<div class="container" id="btn-newcourse">
+    <a class="btn btn-info" href="?page=newStudent">
+        <i class="fas fa-plus-circle"></i>
+        New Student
+    </a>
+</div>
+<table class="table" id="person-table">
     <thead>
         <tr>
             <th scope="col">Course</th>
