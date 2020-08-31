@@ -12,6 +12,8 @@ if ($page == 'courses') {
     include 'views/students.php';
 } elseif ($page == 'enrollments') {
     include 'views/enrollments.php';
+} elseif ($page == 'new_course') {
+    include 'views/newCourse.php';
 } else {
     include 'views/home.php';
 }
