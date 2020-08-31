@@ -16,7 +16,9 @@ if ($page == 'courses') {
     include 'views/newCourse.php';
 }elseif ($page == 'newStudent') {
     include 'views/newStudent.php';
-} else {
+}elseif ($page == 'new_enrollment') {
+    include 'views/new_enrollment.php';
+}else {
     include 'views/home.php';
 }
 

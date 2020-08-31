@@ -12,9 +12,9 @@
         </tr>
     </thead>
     <?php
-    while ($row = mysqli_fetch_array($tableQuery_students)) {
-        echo '<tr><td>' . $row['name_student'] . '</td>';
-        echo '<td>' . $row['date_birth'] . '</td></tr>';
-    }
+        while ($row = mysqli_fetch_array($tableQuery_students)) {
+            echo '<tr><td>' . $row['name_student'] . '</td>';
+            echo '<td>' . $row['date_birth'] . '</td></tr>';
+        }
     ?>
 </table>

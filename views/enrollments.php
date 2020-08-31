@@ -1,9 +1,15 @@
+<div class="container" id="btn-newcourse">
+    <a class="btn btn-info" href="?page=new_enrollment">
+        <i class="fas fa-plus-circle"></i>
+        New Enrollment
+    </a>
+</div>
 
-<table class="table">
+<table class="table" id="person-table">
     <thead>
         <tr>
-            <th scope="col">Course</th>
-            <th scope="col">Amount Hours</th>
+            <th scope="col">Student Name</th>
+            <th scope="col">Course Name</th>
         </tr>
     </thead>
     <?php

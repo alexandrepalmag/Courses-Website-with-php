@@ -13,9 +13,9 @@
         </tr>
     </thead>
     <?php
-    while ($row = mysqli_fetch_array($tableQuery)) {
-        echo '<tr><td>' . $row['name_course'] . '</td>';
-        echo '<td>' . $row['amount_hours'] . '</td></tr>';
-    }
+        while ($row = mysqli_fetch_array($tableQuery)) {
+            echo '<tr><td>' . $row['name_course'] . '</td>';
+            echo '<td>' . $row['amount_hours'] . '</td></tr>';
+        }
     ?>
 </table>

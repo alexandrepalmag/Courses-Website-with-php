@@ -18,9 +18,9 @@ $tableQuery_students = mysqli_query($conn, $query);
 
 /* ===================================================== */
 
-$query = "SELECT * FROM students.name_student, courses.name_course
-            FROM STUDENTS, COURSES, STUDENTS_COURSES
-            WHERE STUDENTS_COURSES.id_student = STUDENTS.id_student
-            AND STUDENTS_COURSES.id_course = COURSES.id_course";
+$query3 = "SELECT students.name_student, courses.name_course
+            FROM students, courses, students_courses
+            WHERE students_courses.id_student = students.id_student
+            AND students_courses.id_course = courses.id_course";
 
-$query_enrollments = mysqli_query($conn, $query);
+$query_enrollments = mysqli_query($conn, $query3);
