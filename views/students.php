@@ -9,6 +9,8 @@
         <tr>
             <th scope="col">Course</th>
             <th scope="col">Amount Hours</th>
+            <th scope="col">Delete</th>
+            <th scope="col">Edit</th>
         </tr>
     </thead>
     <?php
@@ -18,6 +20,8 @@
     ?>
     
     <td><a class="btn btn-danger" href="deletestudent.php?id_student=<?php echo $row['id_student']; ?>"><i class="fas fa-trash-alt"></i></a></td>
+        
+        <td><a class="btn btn-info" href="deletestudent.php?id_student=<?php echo $row['id_student']; ?>"><i class="fas fa-edit"></i></a></td>
         </tr>
 
     <?php        
