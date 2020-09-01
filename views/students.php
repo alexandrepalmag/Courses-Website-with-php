@@ -14,7 +14,13 @@
     <?php
         while ($row = mysqli_fetch_array($tableQuery_students)) {
             echo '<tr><td>' . $row['name_student'] . '</td>';
-            echo '<td>' . $row['date_birth'] . '</td></tr>';
+            echo '<td>' . $row['date_birth'] . '</td>';
+    ?>
+    
+    <td><a class="btn btn-danger" href="deletestudent.php?id_student=<?php echo $row['id_student']; ?>"><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+
+    <?php        
         }
     ?>
 </table>

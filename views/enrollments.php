@@ -15,7 +15,13 @@
     <?php
     while ($row = mysqli_fetch_array($query_enrollments)) {
         echo '<tr><td>' . $row['name_student'] . '</td>';
-        echo '<td>' . $row['name_course'] . '</td></tr>';
+        echo '<td>' . $row['name_course'] . '</td>';
+        ?>
+
+        <td><a class="btn btn-danger" href="deleteenrollment.php?id_enrollment=<?php echo $row['id_student_course']; ?>"><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+
+    <?php
     }
     ?>
 </table>

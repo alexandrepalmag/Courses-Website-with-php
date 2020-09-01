@@ -18,7 +18,7 @@ $tableQuery_students = mysqli_query($conn, $query);
 
 /* ===================================================== */
 
-$query3 = "SELECT students.name_student, courses.name_course
+$query3 = "SELECT students_courses.id_student_course, students.name_student, courses.name_course
             FROM students, courses, students_courses
             WHERE students_courses.id_student = students.id_student
             AND students_courses.id_course = courses.id_course";
