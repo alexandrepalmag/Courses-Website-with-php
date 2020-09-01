@@ -21,7 +21,7 @@
     ?>
         <td><a class="btn btn-danger" href="deletecourse.php?id_course=<?php echo $row['id_course']; ?>"><i class="fas fa-trash-alt"></i></a></td>
         
-        <td><a class="btn btn-info" href="?page=newCourse&edit=<?php echo $row['id_course']; ?>"><i class="fas fa-edit"></i></a></td>
+        <td><a class="btn btn-info" href="?page=new_course&edit=<?php echo $row['id_course']; ?>"><i class="fas fa-edit"></i></a></td>
         </tr>
 
     <?php
