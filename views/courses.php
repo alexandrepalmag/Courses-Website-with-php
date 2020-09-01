@@ -10,12 +10,18 @@
         <tr>
             <th scope="col">Course</th>
             <th scope="col">Amount Hours</th>
+            <th scope="col">Delete</th>
         </tr>
     </thead>
     <?php
-        while ($row = mysqli_fetch_array($tableQuery)) {
-            echo '<tr><td>' . $row['name_course'] . '</td>';
-            echo '<td>' . $row['amount_hours'] . '</td></tr>';
-        }
+    while ($row = mysqli_fetch_array($tableQuery)) {
+        echo '<tr><td>' . $row['name_course'] . '</td>';
+        echo '<td>' . $row['amount_hours'] . '</td>';
+    ?>
+        <td><a class="btn btn-danger" href="deletecourse.php?id_course=<?php echo $row['id_course']; ?>"><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+
+    <?php
+    }
     ?>
 </table>
