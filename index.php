@@ -5,21 +5,21 @@ include 'db.php';
 include 'header.php';
 
 //page content
-$page = $_GET['page'];
-if ($page == 'courses') {
-    include 'views/courses.php';
-} elseif ($page == 'students') {
-    include 'views/students.php';
-} elseif ($page == 'enrollments') {
-    include 'views/enrollments.php';
-} elseif ($page == 'new_course') {
-    include 'views/newCourse.php';
-}elseif ($page == 'newStudent') {
-    include 'views/newStudent.php';
-}elseif ($page == 'new_enrollment') {
-    include 'views/new_enrollment.php';
-}else {
-    include 'views/home.php';
+if(isset($_GET['page'])){
+    $page = $_GET['page'];
+}else{
+    $page = 'home';
+}
+
+switch($page){
+    case 'courses': include 'views/courses.php'; break;
+    case 'students': include 'views/students.php'; break;
+    case 'enrollments': include 'views/enrollments.php'; break;
+    case 'new_course': include 'views/newCourse.php'; break;
+    case 'newStudent': include 'views/newStudent.php'; break;
+    case 'new_enrollment': include 'views/new_enrollment.php'; break;
+    default: include 'views/home.php';
+
 }
 
 //page footer

@@ -8,3 +8,5 @@ $date_birth = $_POST['date_birth'];
 $query = "INSERT INTO STUDENTS (name_student, date_birth) VALUES ('$name_student', $date_birth)";
 
 mysqli_query($conn, $query);
+
+header('location:index.php?page=newStudent');
