@@ -4,8 +4,8 @@
         New Enrollment
     </a>
 </div>
-
-<table class="table" id="person-table">
+<br>
+<table class="table table-striped table-bordered" id="table-enrollment">
     <thead>
         <tr>
             <th scope="col">Student Name</th>

@@ -4,8 +4,8 @@
         New Course
     </a>
 </div>
-
-<table class="table" id="person-table">
+<br>
+<table class="table table-striped table-bordered" id="table-course">
     <thead>
         <tr>
             <th scope="col">Course</th>
