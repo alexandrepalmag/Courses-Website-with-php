@@ -5,7 +5,7 @@
     </a>
 </div>
 <br>
-<table class="table table-striped table-bordered" id="table-student">
+<table class="table table-striped table-bordered table-hover" id="table-student">
         <thead>
             <tr>
                 <th scope="col">Student Name</th>

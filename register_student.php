@@ -9,4 +9,4 @@ $query = "INSERT INTO STUDENTS (name_student, date_birth) VALUES ('$name_student
 
 mysqli_query($conn, $query);
 
-header('location:index.php?page=newStudent');
+header('location:index.php?page=students');
