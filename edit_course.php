@@ -14,12 +14,12 @@ echo 'hours: '.$amount_hours;
 
 $query = "UPDATE COURSES SET name_course='$name_course', amount_hours=$amount_hours WHERE id_course=$id_course";
 
-var_dump(mysqli_query($conn, $query));
-
 if(mysqli_query($conn, $query)){
-    
+   
 } else {
     echo 'Somenthing went wrong';
 }
 
-/* header('location:index.php?page=courses'); */
+header('location:index.php?page=courses');
+
+?>

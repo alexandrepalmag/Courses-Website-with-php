@@ -10,6 +10,7 @@
         <tr>
             <th scope="col">Student Name</th>
             <th scope="col">Course Name</th>
+            <th scope="col">Delete</th>
         </tr>
     </thead>
     <?php
