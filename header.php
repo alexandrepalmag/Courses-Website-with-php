@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
- 
+
 </head>
 
 <body>
@@ -38,6 +38,13 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="?page=enrollments">Enrollments</a>
                             </li>
+                            <?php if (isset($_SESSION['login'])) { ?>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="logout.php"><?php echo $_SESSION['user'] ?>
+                                        (logout)
+                                    </a>
+                                </li>
+                            <?php } ?>
                         </ul>
                     </div>
                 </nav>
